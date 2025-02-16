@@ -95,4 +95,16 @@ public class LinkedList{
             ++Length;
         }
     }
+
+    public void removeFirst(){
+        if(Length == 0){
+            System.out.println("Nothing To Remove");
+        }else{
+            Node Temp = Head;
+            Head = Head.Next;
+            Temp.Next = null;
+            --Length;
+        }
+    }
+
 }
