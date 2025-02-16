@@ -82,4 +82,17 @@ public class LinkedList{
 
         }
     }
+
+    public void prepend(int value){
+        Node newNode = new Node(value);
+        if(Length == 0){
+            Head = newNode;
+            Tail = newNode;
+            ++Length;
+        }else{
+            newNode.Next = Head;
+            Head = newNode;
+            ++Length;
+        }
+    }
 }

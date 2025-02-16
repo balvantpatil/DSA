@@ -12,11 +12,15 @@ public class Main {
         LL.append(5);
         LL.removeLast();
         LL.removeLast();
-        LL.printList();
-
+        LL.prepend(10);
+        
+        System.out.println("*******************");
+        LL.printList(); 
+        System.out.println("*******************");
         LL.getHead();
         LL.getTail();
         LL.getLength();
+        System.out.println("*******************");
 
 
         
