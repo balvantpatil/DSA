@@ -107,4 +107,26 @@ public class LinkedList{
         }
     }
 
+    public Node getAtIndex(int index){
+        if(index < 0 || index >= Length){
+            return null;
+        }else{
+            Node temp = Head;
+            for(int i=0; i<index;++i){
+                temp = temp.Next;
+            }
+            return temp;
+        }
+    }
+
+    public boolean setAtIndex(int index, int value){
+        Node temp = getAtIndex(index);
+        if(temp == null){
+            return false;
+        }else{
+            temp.Value = value;
+            return true; 
+        }
+    }
+
 }

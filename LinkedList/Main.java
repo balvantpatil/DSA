@@ -18,6 +18,13 @@ public class Main {
         System.out.println("*******************");
         LL.printList(); 
         System.out.println("*******************");
+        System.out.println(LL.getAtIndex(0).Value);
+        System.out.println("*******************");
+
+        System.out.println("Value Modified = "+LL.setAtIndex(0,200));
+        System.out.println("*******************");
+        LL.printList(); 
+
         LL.getHead();
         LL.getTail();
         LL.getLength();
