@@ -129,4 +129,35 @@ public class LinkedList{
         }
     }
 
+    public boolean insert(int index, int value){
+        if(index < 0 || index > Length){
+            return false;
+        }else if(index == Length){
+            Node newNode = new Node(value);
+            Tail.Next = newNode;
+            newNode = Tail;
+            ++Length;
+            return true;
+        }else if(index == 0){
+            Node newNode = new Node(value);
+            newNode.Next = Head;
+            Head = newNode;
+            ++Length;
+            return true;
+        }else{
+            Node newNode = new Node(value);
+            Node temp = Head;
+            Node prev = Head;
+            for(int i=0; i<index; ++i){
+                prev = temp;
+                temp = temp.Next;
+                
+            }
+            prev.Next = newNode;
+            newNode.Next = temp;
+            ++Length;
+            return true;
+        }
+    }
+
 }

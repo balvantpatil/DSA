@@ -10,7 +10,7 @@ public class Main {
         LL.append(3);
         LL.append(4);
         LL.append(5);
-        LL.removeLast();
+     /*   LL.removeLast();
         LL.removeLast();
         LL.prepend(10);
         LL.removeFirst();
@@ -22,8 +22,14 @@ public class Main {
         System.out.println("*******************");
 
         System.out.println("Value Modified = "+LL.setAtIndex(0,200));
-        System.out.println("*******************");
-        LL.printList(); 
+        System.out.println("*******************");  
+    */
+        //LL.printList(); 
+
+        //LL.insert(0,100);
+        LL.insert(0,100);
+
+        LL.printList();
 
         LL.getHead();
         LL.getTail();
